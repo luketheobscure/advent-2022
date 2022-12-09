@@ -1,17 +1,8 @@
+import java.io.File
+
 fun main() {
-    fun part1(input: List<String>): Int {
-        return input.size
-    }
+    val testInput = File(ClassLoader.getSystemResource("day1.txt").file).readLines()
 
-    fun part2(input: List<String>): Int {
-        return input.size
-    }
+    check(testInput.size == 1)
 
-    // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
-
-    val input = readInput("Day01")
-    println(part1(input))
-    println(part2(input))
 }
